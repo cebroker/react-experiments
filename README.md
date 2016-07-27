@@ -3,12 +3,16 @@ A generic repository with a tiny code base for playing with react.
 
 ##Quick Start
 1. Clone the repository
-`$ git clone https://github.com/cebroker/react-experiments/`
+
+  `$ git clone https://github.com/cebroker/react-experiments/`
+
 2. Create a new branch
-```
-$ cd react-experiments
-$ git checkout -b my-new-experiment
-```
+
+  ```
+  $ cd react-experiments
+  $ git checkout -b my-new-experiment
+  ```
+  
 3. Push it to the server
 
 ## Planned Experiments
