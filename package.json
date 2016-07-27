@@ -1,0 +1,43 @@
+{
+  "name": "react-experiments",
+  "version": "1.0.0",
+  "description": "A generic repository with a tiny code base for playing with react.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --inline --content-base dist/public/ --history-api-fallback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cebroker/react-experiments.git"
+  },
+  "keywords": [
+    "labs",
+    "experiments",
+    "react"
+  ],
+  "author": "fcaldera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cebroker/react-experiments/issues"
+  },
+  "homepage": "https://github.com/cebroker/react-experiments#readme",
+  "dependencies": {
+    "axios": "^0.13.1",
+    "express": "^4.14.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
