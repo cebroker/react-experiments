@@ -5,8 +5,10 @@ A generic repository with a tiny code base for playing with react.
 1. Clone the repository
 `$ git clone https://github.com/cebroker/react-experiments/`
 2. Create a new branch
-`$ cd react-experiments`
-`$ git checkout -b my-new-experiment
+```
+$ cd react-experiments
+$ git checkout -b my-new-experiment
+```
 3. Push it to the server
 
 ## Planned Experiments
@@ -17,7 +19,7 @@ A generic repository with a tiny code base for playing with react.
 5. Try react-server framework
 
 
-**Important!**
+##Important!
 Keep the master branch unmodified. Never merge a branch into it.
 
 
