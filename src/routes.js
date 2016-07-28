@@ -6,7 +6,7 @@ import HelloWorld from './components/HelloWorld';
 
 export default (
   <Route path="/" component={App}>
-    <Route path="/providers/:providerId" component={HelloWorld} />
+    <Route path="/providers/:id" component={HelloWorld} />
   </Route>
 );
 
