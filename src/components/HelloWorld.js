@@ -28,7 +28,6 @@ class HelloWorld extends Component {
 }
 
 function mapStateToProps(state) {
-  console.log(state.providers);
   return { provider: state.providers.provider }
 }
 

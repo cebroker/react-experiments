@@ -1,0 +1,32 @@
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+
+  &-logo {
+    animation: spin infinite 20s linear;
+    height: 80px;
+  }
+
+  &-header {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+  }
+
+  &-intro {
+    font-size: large;
+  }
+
+  &-content {
+    padding-top: 20px;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
