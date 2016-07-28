@@ -3,6 +3,9 @@ var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var config = {
+   devServer: {
+    stats: {chunks:false, warnings: true},
+  },
   context: path.join(__dirname, 'src'),
   devtool: 'source-map',
   entry: ['babel-polyfill', './client.js'],
@@ -14,6 +17,13 @@ var config = {
   },
 
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint'
+      }
+    ],
     loaders: [
       {
         test: /\.js$/,
@@ -29,6 +39,10 @@ var config = {
         loader: 'file',
       },
     ]
+  },
+  eslint: {
+    configFile: path.join(__dirname, 'eslint.js'),
+    useEslintrc: false
   },
   postcss: function() {
     return [autoprefixer];

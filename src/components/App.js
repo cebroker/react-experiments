@@ -9,6 +9,8 @@ class App extends Component {
   }
 
   render() {
+    var x;
+
     return (
       <div className="App">
         <div className="App-header">
