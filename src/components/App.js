@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
 import { Grid, Row } from 'react-bootstrap';
-import logo from '../logo.svg';
+// import logo from '../images/logo.svg';
 import './App.scss';
-
+import { Link } from 'react-router';
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
-    var x;
-
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="/images/logo.svg" className="App-logo" alt="logo" />
           <h2>React Experiments</h2>
         </div>
         <div className="App-content">
           <Grid>
             <Row>
+              <Link to="/providers/1">Go to provider 1</Link>
               {this.props.children}
             </Row>
           </Grid>
@@ -28,5 +24,26 @@ class App extends Component {
     );
   }
 }
+
+// class App extends Component {
+
+//   render() {
+//     return (
+//       <div className="App">
+//         <div className="App-header">
+//           <img src={logo} className="App-logo" alt="logo" />
+//           <h2>React Experiments</h2>
+//         </div>
+//         <div className="App-content">
+//           <Grid>
+//             <Row>
+//               {this.props.children}
+//             </Row>
+//           </Grid>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
 export default App;

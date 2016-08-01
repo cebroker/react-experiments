@@ -1,6 +1,7 @@
 var path = require('path');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
    devServer: {
@@ -32,7 +33,7 @@ var config = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!postcss!sass'
+        loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
@@ -52,7 +53,8 @@ var config = {
       inject: true,
       template: 'index.html',
       favicon: path.resolve(__dirname, 'favicon.ico')
-    })
+    }),
+    new ExtractTextPlugin('styles.css')
   ],
 }
 

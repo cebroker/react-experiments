@@ -8,8 +8,11 @@ import promise from 'redux-promise';
 import reducers from './reducers/index';
 import routes from './routes';
 
+const initialState = window.__INITIAL_STATE__;
+
 const store = createStore(
   reducers,
+  initialState,
   applyMiddleware(promise)
 );
 

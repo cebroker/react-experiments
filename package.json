@@ -4,7 +4,11 @@
   "description": "A generic repository with a tiny code base for playing with react.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --inline --content-base dist/public/ --history-api-fallback"
+    "start": "webpack-dev-server --progress --inline --content-base dist/public/ --history-api-fallback",
+    "server": "npm run build && node dist/server.js",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "webpack",
+    "build:server": "webpack --config webpack.server.config.js"
   },
   "repository": {
     "type": "git",
@@ -40,11 +44,13 @@
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
+    "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
     "eslint": "^3.1.1",
     "eslint-loader": "^1.5.0",
     "eslint-plugin-import": "^1.12.0",
     "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "node-sass": "^3.8.0",

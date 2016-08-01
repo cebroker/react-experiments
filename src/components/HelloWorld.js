@@ -3,9 +3,6 @@ import { connect } from 'react-redux';
 import { fetchProvider } from '../actions';
 
 class HelloWorld extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentWillMount() {
     this.props.fetchProvider(this.props.params.id);
