@@ -4,7 +4,17 @@ import { fetchProvider } from '../actions';
 
 class HelloWorld extends Component {
 
-  componentWillMount() {
+  static fetchData({ store, params }) {
+    return store.dispatch(fetchProvider(params.id));
+  }
+
+  // A different approach
+  // static needs = [
+  //   fetchProvider
+  // ]
+
+  componentDidMount() {
+    if (this.props.provider) return;
     this.props.fetchProvider(this.props.params.id);
   }
 

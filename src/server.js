@@ -29,25 +29,25 @@ function handleRequest(req, res) {
     } else if (redirect) {
       res.redirect(redirect.pathname + redirect.search);
     } else if (props) {
-      console.log(props.params);
+
       const store = createStore(
         reducers,
         applyMiddleware(promise)
       );
 
-      const html = renderToString(
-        <Provider store={store}>
-          <RouterContext
-            {...props}
-            createElement={(Component, props) => {
-              return <Component {...props} />;
-            }} />
-        </Provider>
-      );
+      fetchData(props, store).then(() => {
+        const html = renderToString(
+          <Provider store={store}>
+            <RouterContext {...props} />
+          </Provider>
+        );
 
-      const initialState = store.getState();
+        const initialState = store.getState();
 
-      res.send(renderFullPage(html, initialState));
+        res.send(renderFullPage(html, initialState));
+      });
+
+
     } else {
       res.status(404).send('Not Found');
     }
@@ -73,12 +73,32 @@ function renderFullPage(html, initialState) {
     <body>
         <div id="root">${html}</div>
         <script>
-          window.__INITIAL_SATE__ = ${JSON.stringify(initialState)};
+          window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
         </script>
         <script type="text/javascript" src="/bundle.js"></script>
      </body>
     </html>
   `;
+}
+
+// function fetchData(dispatch, components, params) {
+//   const needs = components.reduce( (prev, current) => {
+//     return (current.needs || [])
+//       .concat((current.WrappedComponent ? current.WrappedComponent.needs : []) || [])
+//       .concat(prev);
+//     }, []);
+
+//     const promises = needs.map(need => dispatch(need(params)));
+//     return Promise.all(promises);
+// }
+
+function fetchData (renderProps, store) {
+  let { query, params } = renderProps;
+  let comp = renderProps.components[renderProps.components.length - 1].WrappedComponent;
+  // let promise = comp.fetchData ? comp.fetchData({ query, params, store, history }) : Promise.resolve();
+  if (!comp) { return Promise.resolve(); }
+  let promise = comp.fetchData ? comp.fetchData({ query, params, store }) : Promise.resolve();
+  return promise;
 }
 
 app.listen(port, function() {

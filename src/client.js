@@ -10,6 +10,8 @@ import routes from './routes';
 
 const initialState = window.__INITIAL_STATE__;
 
+console.log("initialState:", initialState);
+
 const store = createStore(
   reducers,
   initialState,
