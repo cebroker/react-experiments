@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Checkbox from 'react-toolbox/lib/checkbox';
 
 export default class MessageItem extends Component {
 	constructor(props) {
@@ -28,7 +29,7 @@ export default class MessageItem extends Component {
 		return (
 			<tr className={`MessageItem ${this.state.selected ? 'active' : ''}`}>
 				<td>
-					<input type="checkbox" checked={this.state.selected} onChange={this.handleChange} />
+					<Checkbox checked={this.state.selected} onChange={this.handleChange} />
 				</td>
 				<td>
 					<span>{subject}</span>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MessageItem from './MessageItem';
+import styles from 'react-toolbox/lib/table/theme.scss';
 
 export default class MessageList extends Component {
 
@@ -14,7 +15,7 @@ export default class MessageList extends Component {
 
 	render() {
 		return (
-			<table>
+			<table className={styles.table}>
 				<tbody>
 					{this.renderItems()}
 				</tbody>

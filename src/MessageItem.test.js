@@ -1,9 +1,10 @@
 import React from 'react';
 import chai, { expect } from 'chai';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import chaiEnzyme from 'chai-enzyme';
 import MessageItem from './MessageItem';
 import { spy } from 'sinon';
+import Checkbox from 'react-toolbox/lib/checkbox';
 
 chai.use(chaiEnzyme());
 
@@ -30,7 +31,7 @@ it('renders 7 columns', () => {
 it('has a checkbox', ()=> {
 	const message = {}
 	const wrapper = shallow(<MessageItem message={message} />)
-	expect(wrapper).to.have.exactly(1).descendants('input[type="checkbox"]')
+	expect(wrapper).to.have.exactly(1).descendants(Checkbox);
 })
 
 it('should start unselected', ()=> {
@@ -49,7 +50,7 @@ it('should toogle selected state', () => {
 
 it('should be selectable', () => {
 	const wrapper = shallow(<MessageItem message={{}} />)
-	const checkbox = wrapper.find('input[type="checkbox"]');
+	const checkbox = wrapper.find(Checkbox);
 	checkbox.simulate('change')
 	expect(wrapper.state('selected')).to.be.true;
 	expect(checkbox).to.be.checked;
