@@ -1,0 +1,7 @@
+{
+	"messages": [
+		{"id": 123, "hasAttachment": false, "read": true, "subject": "This is a foo"},
+		{"id": 124, "hasAttachment": false, "read": false, "subject": "This is a bar"},
+		{"id": 125, "hasAttachment": true, "read": true, "subject": "This is a tar"}
+	]
+}
