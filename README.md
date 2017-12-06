@@ -1,32 +1,43 @@
-# React Experiments
-A generic repository with a tiny code base for playing with react.
+# React Next
 
-##Quick Start
-1. Clone the repository
+Project boilerplate for creating react applications with Emerald UI integrated.
 
-  `$ git clone https://github.com/cebroker/react-experiments/`
+## Installation
 
-2. Create a new branch
+To install the project all you have to do is clone the repo and install the dependencies.
 
-  ```
-  $ cd react-experiments
-  $ git checkout -b my-new-experiment
-  ```
-  
-3. Push it to the server
+```
+git clone https://github.com/cebroker/react-next.git 
+cd react-next
+npm install
+```
 
-## Planned Experiments
-1. Redux basic: implement a simple page that use Redux. No styling required.
-2. Modular CSS: follow a style guiding either SMACSS or BEM. Evaluate how to use bootstraps from a CDN and do customization with theming.
-3. Isomorphic: implement an maintenaible isomorphinc strategy.
-4. Try react-starter-kit boilerplate
-5. Try react-server framework
+## Scripts
+You can run following npm scripts in order to execute the most common tasks:
+
+### `npm start`
+
+Runs the app in development mode at http://localhost:3000.
+
+You also can change the environment that will run the project. Just add this to the command:
+
+  `REACT_APP_ENV=[ENVIRONMENT] npm start`
+
+The `[ENVIRONMENT]` could be equal to: `development`, `test`, `demo`, `production`.
+
+### `npm test`
+
+Runs the test watcher in an interactive mode. By default, runs tests related to files changes since the last commit. See the test output to learn more.
+
+### `npm build`
+
+Builds the app for production by setting the bundles in production mode and optimizing the build for the best performance.
+Your app is ready to be deployed!
+
+## Enviroment Variables
+We've inclueded commonly used custom [enviroment variables](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables) for your convenience.
+
+### `REACT_APP_URL_BASE`
+If this app is served from a sub-directory on your server, you’ll want to set this to the sub-directory. A properly formatted basename should have a leading slash, but no trailing slash.
 
 
-##Important!
-Keep the master branch unmodified. Never merge a branch into it.
-
-
-
-
-Have fun!

@@ -1,0 +1,442 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly - snapshot 1`] = `
+<div
+  className="App"
+>
+  <nav
+    className="AppBar appbar navbar navbar-inverse"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="navbar-header"
+      >
+        <a
+          className="navbar-brand App-brand"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="[My APP]"
+            className="App-logo"
+            src="ce-broker-logo.svg"
+          />
+        </a>
+      </div>
+      <ul
+        className="nav"
+        role={null}
+      >
+        <li
+          className=""
+          role="presentation"
+          style={undefined}
+        >
+          <a
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            My records
+          </a>
+        </li>
+        <li
+          className=""
+          role="presentation"
+          style={undefined}
+        >
+          <a
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            Browse courses
+          </a>
+        </li>
+      </ul>
+      <div
+        className="pull-right"
+      >
+        <form
+          className="search-form"
+          id={undefined}
+          onClick={[Function]}
+          onSubmit={[Function]}
+          style={undefined}
+        >
+          <i
+            className="material-icons"
+          >
+            search
+          </i>
+          <label
+            className="sr-only"
+            htmlFor="query"
+          >
+            Search for a course provider or subject
+          </label>
+          <input
+            autoCapitalize="off"
+            autoComplete="off"
+            autoCorrect="off"
+            id="query"
+            name="query"
+            onChange={[Function]}
+            placeholder="Search for a course provider or subject"
+            type="search"
+            value=""
+          />
+        </form>
+        <ul
+          className="nav pull-right"
+          role={null}
+        >
+          <li
+            className="upgrade-link"
+            role="presentation"
+            style={undefined}
+          >
+            <a
+              href="#"
+              onClick={[Function]}
+              role="button"
+            >
+              UPGRADE NOW
+            </a>
+          </li>
+          <li
+            className="nav-item-icon"
+            role="presentation"
+            style={undefined}
+          >
+            <a
+              href="#"
+              onClick={[Function]}
+              role="button"
+            >
+              <div
+                className="red-indicator active"
+              >
+                <i
+                  className="material-icons"
+                  style={
+                    Object {
+                      "fontSize": "26px",
+                    }
+                  }
+                >
+                  mail
+                </i>
+              </div>
+            </a>
+          </li>
+          <li
+            className="avatar-dropdown dropdown"
+            style={undefined}
+          >
+            <a
+              aria-expanded={false}
+              aria-haspopup={true}
+              className="dropdown-toggle"
+              href="#"
+              id="test-nav-dropdown"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+            >
+              <div
+                className="avatar avatar-xs"
+                style={
+                  Object {
+                    "backgroundColor": "#009688",
+                  }
+                }
+              >
+                uu
+              </div>
+            </a>
+            <ul
+              aria-labelledby="test-nav-dropdown"
+              className="dropdown-menu dropdown-menu-right"
+              role="menu"
+            >
+              <li
+                className="dropdown-header"
+                onKeyDown={[Function]}
+                role="heading"
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "minWidth": "217px",
+                    "paddingBottom": "10px",
+                    "paddingTop": "11px",
+                  }
+                }
+              >
+                <div
+                  className="avatar avatar-lg"
+                  style={
+                    Object {
+                      "backgroundColor": "#009688",
+                      "display": "inline-block",
+                      "marginRight": "20px",
+                    }
+                  }
+                >
+                  uu
+                </div>
+                <div
+                  style={
+                    Object {
+                      "display": "inline-block",
+                    }
+                  }
+                >
+                  <p
+                    className="username"
+                  >
+                    undefined undefined
+                  </p>
+                  <p
+                    className="subtitle"
+                  >
+                    ADMIN
+                  </p>
+                </div>
+              </li>
+              <li
+                className="divider"
+                onKeyDown={[Function]}
+                role="separator"
+                style={undefined}
+              />
+              <li
+                className=""
+                role="presentation"
+                style={undefined}
+              >
+                <a
+                  href="#"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  <i
+                    className="ec-icon material-icons"
+                  >
+                    settings
+                  </i>
+                  Account settings
+                </a>
+              </li>
+              <li
+                className=""
+                role="presentation"
+                style={undefined}
+              >
+                <a
+                  href="#"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  <i
+                    className="ec-icon material-icons"
+                  >
+                    supervisor_account
+                  </i>
+                  Users
+                </a>
+              </li>
+              <li
+                className="divider"
+                onKeyDown={[Function]}
+                role="separator"
+                style={undefined}
+              />
+              <li
+                className=""
+                role="presentation"
+                style={undefined}
+              >
+                <a
+                  href="#"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  <i
+                    className="ec-icon material-icons"
+                  >
+                    exit_to_app
+                  </i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="ec-page-header"
+  >
+    <div
+      className="container"
+    >
+      <img
+        alt="illustration of buildings and windmills"
+        className="page-header-illustration"
+        src="page-header-illustration.svg"
+      />
+      <h2
+        className="text-left"
+        style={
+          Object {
+            "marginBottom": "25px",
+            "marginTop": "29px",
+          }
+        }
+      >
+        Good afternoon, 
+         !
+      </h2>
+      <ul
+        className="page-header-nav nav nav-pills"
+        role={null}
+      >
+        <li
+          className="active"
+          role="presentation"
+          style={undefined}
+        >
+          <a
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            OVERVIEW
+          </a>
+        </li>
+        <li
+          className=""
+          role="presentation"
+          style={undefined}
+        >
+          <a
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            COURSE HISTORY
+          </a>
+        </li>
+        <li
+          className=""
+          role="presentation"
+          style={undefined}
+        >
+          <a
+            href="#"
+            onClick={[Function]}
+            role="button"
+          >
+            REPORTED EXEMPTIONS
+          </a>
+        </li>
+        <li
+          className="dropdown"
+          style={undefined}
+        >
+          <a
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle"
+            href="#"
+            id="tab-dropdown"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+          >
+            <span>
+              MORE
+              <i
+                className="material-icons"
+              >
+                arrow_drop_down
+              </i>
+            </span>
+          </a>
+          <ul
+            aria-labelledby="tab-dropdown"
+            className="dropdown-menu"
+            role="menu"
+          >
+            <li
+              className=""
+              role="presentation"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="menuitem"
+                tabIndex="-1"
+              >
+                <i
+                  className="ec-icon material-icons"
+                >
+                  settings
+                </i>
+                Action 1
+              </a>
+            </li>
+            <li
+              className=""
+              role="presentation"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="menuitem"
+                tabIndex="-1"
+              >
+                <i
+                  className="ec-icon material-icons"
+                >
+                  supervisor_account
+                </i>
+                Action 2
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="container"
+    style={
+      Object {
+        "paddingTop": "20px",
+      }
+    }
+  >
+    <h2
+      className="text-left"
+    >
+      Overview
+    </h2>
+  </div>
+</div>
+`;
