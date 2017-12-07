@@ -45,6 +45,5 @@ jspm_packages
 *.sublime-workspace
 
 # outup directory
-public
 build
 dist
